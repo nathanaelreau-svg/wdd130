@@ -14,43 +14,58 @@
     box-sizing:border-box;
 }
 
-main {
-    max-width: 840px;
+main{
+    grid-column: 2/3;
+}
+
+header,.grid, footer {
+  max-width: 840px;
+  margin: 0 auto;
 }
 
 nav {
     background-color: darkblue;
     padding: var(--padding);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 600;
 }
 
 h1 {
     color: darkblue;
+    border-bottom: var(--border);
 }
 
 main img {
+    float: right;
     width: 150px;
     height: var(--height);
     border: var(--border);
-    margin: 0 1rem 1rem 5%;
+    margin: var(--margin);
     padding: 2px;
     box-shadow: 0 0 30px gray;
-    float: right;
 }
 
 p {
     padding: 0px;
+    margin: var(--margin);
 }
 
 aside{
     width: 20rem;
     text-align: var(--text-align);
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
@@ -65,16 +80,23 @@ aside h2{
 }
 
 footer {
-    margin-top: 1rem;
+    margin-top: 15px;
     border-top: 2px dotted black;
     text-align: var(--text-align);
 }
 
 /*Class Selectors*/
+
+.grid{
+    display: grid;
+    align-items: center;
+}
+
 .box{
     margin: var(--margin);
     padding: 1rem;
     border: var(--border);
     background-color: var(--background-color);
     color: var(--color);
+    clear: both;
 }
