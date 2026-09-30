@@ -54,14 +54,14 @@ h1, h2 {
 
 nav, p, section, article {
     padding: 8px;
-    margin: 16px;
+    margin: 8px;
 }
 
 .hero {
     position: relative;
 }
 
-.hero img {
+.hero > img {
     display: block;
     width: 100%;
     height: auto;
@@ -127,21 +127,31 @@ h2 {
     width: 200px;
 }
 
-figure {
+section h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.adventures {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    align-items: center;
-    gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
 }
 
-figure img {
+.adventures figure {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
     height: auto;
-    width: 200px;
-    order: -1;
-    margin-top: 2rem;
+    display: block;
 }
 
-figure figcaption {
+.adventures figcaption {
     font-size: smaller;
     font-weight: bold;
 }
