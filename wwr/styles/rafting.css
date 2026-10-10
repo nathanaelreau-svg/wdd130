@@ -199,16 +199,6 @@ footer {
     text-align: center; 
 }
 
-.map iframe { 
-    display: block; 
-    width: 100%; 
-    max-width: 600px; 
-    height: 350px; 
-    margin: 0 auto; 
-    border: 2px solid var(--accent1-color); 
-}
-
-
 /*Employee Profile part*/
 
 .employees {
@@ -332,13 +322,6 @@ footer {
     min-width: 0; 
     margin: 0; 
     padding: 15px; 
-} 
-
-.contact-layout .map iframe { 
-    display: block; 
-    width: 100%; 
-    height: 350px; 
-    border: 2px solid var(--accent1-color); 
 } 
 
 .contact-layout .contact-form form { 
